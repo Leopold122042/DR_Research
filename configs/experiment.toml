@@ -1,0 +1,97 @@
+schema_version = 2
+
+[simulation]
+horizon = 336
+dt_hours = 0.5
+
+[weather]
+# Fixed public CSWD week IDs: 0..7 train, 8..9 validation, 10 held-out test.
+# Alternative synthetic_week uses the sinusoid fields in [demand].
+provider = "nanjing_cswd"
+default_week = 10
+
+[scales]
+S1 = [8, 2, 1]
+S2 = [32, 8, 4]
+S3 = [128, 32, 16]
+S4 = [512, 128, 64]
+S5 = [2048, 512, 256]
+
+[graph]
+buildings_per_station = 4
+pumps_per_tank = 4
+tanks_per_building = 2
+neighbor_radius = 2
+extra_edge_probability = 0.45
+
+[[pump_models]]
+name = "2G C-90-B-r-6-L"
+heat_max_kw = 63.0
+cop = 2.29
+fraction = 0.5
+
+[[pump_models]]
+name = "2G C-90-B-r-6-2S"
+heat_max_kw = 90.0
+cop = 2.38
+fraction = 0.25
+
+[[pump_models]]
+name = "2G C-90-B-r-6-2L"
+heat_max_kw = 125.0
+cop = 2.29
+fraction = 0.25
+
+[tank]
+model = "Dehoust 112065"
+volume_m3 = 50.0
+water_heat_capacity_kwh_per_m3_k = 1.163
+reference_c = 70.0
+maximum_c = 90.0
+initial_c = 80.0
+terminal_c = 80.0
+eta_charge = 0.98
+eta_discharge = 0.98
+# Engineering assumptions; these are not manufacturer-certified ratings.
+ua_kw_per_k = 0.026
+environment_c = 10.0
+charge_capacity_fraction = 1.0
+discharge_capacity_fraction = 1.0
+
+[operation]
+availability = true
+# Research assumptions, not a manufacturer part-load or ramp map.
+minimum_load_fraction = 0.10
+ramp_fraction_per_step = 0.50
+initial_load_fraction = 0.45
+power_band_center_fraction = 0.55
+power_band_half_width_fraction = 0.40
+source_capacity_fraction = 0.90
+
+[demand]
+# P4 research assumption: .45 Qnom f_b * max(20-Tout,0)/15 * (1 + .10 occupancy).
+# Occupancy changes are represented as a net demand scenario, not a comfort model.
+occupancy_gain_gamma = 0.10
+occupancy_transition_hours = 1.0
+reference_degree_difference_c = 15.0
+# Sinusoid fields apply only to synthetic_week; CSWD uses the bundled CSV.
+indoor_c = 20.0
+outdoor_mean_c = 5.0
+outdoor_amplitude_c = 5.0
+outdoor_phase_hour = 12.0
+mean_load_fraction = 0.45
+building_factor_half_width = 0.05
+edge_capacity_fraction = 1.0
+
+[tariff]
+valley = 0.3815
+flat = 0.6756
+peak = 1.0376
+critical_peak = 1.2005
+# Each item applies to [hour, hour+1); repeated at half-hour resolution.
+hourly_periods = ["valley", "valley", "valley", "valley", "valley", "valley", "flat", "flat", "flat", "flat", "flat", "valley", "valley", "flat", "peak", "peak", "peak", "peak", "critical_peak", "critical_peak", "peak", "peak", "flat", "flat"]
+
+[provenance]
+pumps_url = "https://2-g.com/en/products/heat-pumps/afilia-water-series"
+tank_url = "https://www.dehoust.com/en-001/Products/745FEEDA-F724-451E-B37D-972AF3124B89/50-m-D-2700-mm-L-10900-mm"
+note = "Published Q and COP define electrical maxima as Q/COP. Temperature range and volume are device-grounded; UA, efficiencies, rates, source caps, service band, topology and demand are explicit research assumptions. A single energy state assumes a mixed tank; stratification is not simulated. Tariff is the supplied Jiangsu December study schedule, not a universal retail contract."

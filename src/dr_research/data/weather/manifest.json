@@ -1,0 +1,434 @@
+{
+  "schema_version": 1,
+  "source_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/CHN_China/JS_Jiangsu/CHN_JS_Nanjing.582380_CSWD.zip",
+  "source_archive": "CHN_JS_Nanjing.582380_CSWD.zip",
+  "source_archive_sha256": "31b5f736547519f713f7ccdf6b28251f444adad57bff48963c00a8a34ec6ce4c",
+  "source_epw": "CHN_JS_Nanjing.582380_CSWD.epw",
+  "source_epw_sha256": "adde041568f08314e2015e1ad4e15c640ad2c36cc37c778eff6d7b12e95a0226",
+  "derived_csv": "nanjing_cswd_dry_bulb.csv",
+  "derived_csv_sha256": "d0bb7a021ac7b62a8304f2cde4b689ab0cf8cbdd913cae90cd353a192fda7f05",
+  "station": "LOCATION,Nanjing,Jiangsu,CHN,CSWD,582380,32.83333,118.8000,8.0,7.1",
+  "source_comment": "COMMENTS 1,\"CSWD China Standard Weather Data for Analyzing Building Thermal Conditions May 2010. China Meteorological Bureau-Climate Information Center-Climate Data Office and Tsinghua University-Department of Building Science and Technology\"",
+  "source_years": [
+    2005
+  ],
+  "time_basis": "Typical meteorological year, not a measured consecutive calendar year. EPW local standard time UTC+8; ending-hour observations. Calendar years in EPW are not experiment day types.",
+  "calendar": "Every selected seven-day weather block is assigned Monday 00:00 through Sunday 23:30. No daily state reset.",
+  "interpolation": "Linear interpolation from hourly ending-hour temperatures to half-hour left-edge timestamps; annual boundary uses preceding year-end observation.",
+  "weeks": [
+    {
+      "candidate_id": 4,
+      "start_month_day": "11-29",
+      "end_month_day": "12-05",
+      "start_hour_of_year": 7968,
+      "minimum_c": -1.4,
+      "maximum_c": 14.8,
+      "mean_c": 7.357886904761905,
+      "reference_feasible_all_scales_seed42": true,
+      "week_id": 0,
+      "split": "train"
+    },
+    {
+      "candidate_id": 5,
+      "start_month_day": "12-06",
+      "end_month_day": "12-12",
+      "start_hour_of_year": 8136,
+      "minimum_c": -0.04999999999999999,
+      "maximum_c": 8.6,
+      "mean_c": 4.597023809523809,
+      "reference_feasible_all_scales_seed42": true,
+      "week_id": 1,
+      "split": "train"
+    },
+    {
+      "candidate_id": 6,
+      "start_month_day": "12-13",
+      "end_month_day": "12-19",
+      "start_hour_of_year": 8304,
+      "minimum_c": -2.0,
+      "maximum_c": 8.8,
+      "mean_c": 2.5142857142857147,
+      "reference_feasible_all_scales_seed42": true,
+      "week_id": 2,
+      "split": "train"
+    },
+    {
+      "candidate_id": 8,
+      "start_month_day": "12-27",
+      "end_month_day": "01-02",
+      "start_hour_of_year": 8640,
+      "minimum_c": -5.3,
+      "maximum_c": 12.6,
+      "mean_c": 4.558333333333333,
+      "reference_feasible_all_scales_seed42": true,
+      "week_id": 3,
+      "split": "train"
+    },
+    {
+      "candidate_id": 9,
+      "start_month_day": "01-03",
+      "end_month_day": "01-09",
+      "start_hour_of_year": 48,
+      "minimum_c": -5.4,
+      "maximum_c": 4.9,
+      "mean_c": -0.25848214285714294,
+      "reference_feasible_all_scales_seed42": true,
+      "week_id": 4,
+      "split": "train"
+    },
+    {
+      "candidate_id": 10,
+      "start_month_day": "01-10",
+      "end_month_day": "01-16",
+      "start_hour_of_year": 216,
+      "minimum_c": -4.6,
+      "maximum_c": 14.0,
+      "mean_c": 2.588392857142857,
+      "reference_feasible_all_scales_seed42": true,
+      "week_id": 5,
+      "split": "train"
+    },
+    {
+      "candidate_id": 11,
+      "start_month_day": "01-17",
+      "end_month_day": "01-23",
+      "start_hour_of_year": 384,
+      "minimum_c": -4.0,
+      "maximum_c": 12.7,
+      "mean_c": 2.8367559523809525,
+      "reference_feasible_all_scales_seed42": true,
+      "week_id": 6,
+      "split": "train"
+    },
+    {
+      "candidate_id": 12,
+      "start_month_day": "01-24",
+      "end_month_day": "01-30",
+      "start_hour_of_year": 552,
+      "minimum_c": -5.6,
+      "maximum_c": 13.1,
+      "mean_c": 3.0153273809523804,
+      "reference_feasible_all_scales_seed42": true,
+      "week_id": 7,
+      "split": "train"
+    },
+    {
+      "candidate_id": 13,
+      "start_month_day": "01-31",
+      "end_month_day": "02-06",
+      "start_hour_of_year": 720,
+      "minimum_c": -3.4,
+      "maximum_c": 9.0,
+      "mean_c": 3.8867559523809527,
+      "reference_feasible_all_scales_seed42": true,
+      "week_id": 8,
+      "split": "validation"
+    },
+    {
+      "candidate_id": 14,
+      "start_month_day": "02-07",
+      "end_month_day": "02-13",
+      "start_hour_of_year": 888,
+      "minimum_c": -1.7,
+      "maximum_c": 12.5,
+      "mean_c": 3.9876488095238094,
+      "reference_feasible_all_scales_seed42": true,
+      "week_id": 9,
+      "split": "validation"
+    },
+    {
+      "candidate_id": 15,
+      "start_month_day": "02-14",
+      "end_month_day": "02-20",
+      "start_hour_of_year": 1056,
+      "minimum_c": -0.9,
+      "maximum_c": 13.1,
+      "mean_c": 5.1433035714285715,
+      "reference_feasible_all_scales_seed42": true,
+      "week_id": 10,
+      "split": "test"
+    }
+  ],
+  "candidate_screen": [
+    {
+      "candidate_id": 0,
+      "start_month_day": "11-01",
+      "end_month_day": "11-07",
+      "start_hour_of_year": 7296,
+      "minimum_c": 6.0,
+      "maximum_c": 20.8,
+      "mean_c": 13.173958333333333,
+      "reference_feasible_all_scales_seed42": false,
+      "failure_reasons": {
+        "S1": "constructive reference is infeasible: pump_lower: residual 5.16123544 exceeds 1e-05; power_band_lower: residual 42.6208631 exceeds 1e-05",
+        "S2": "constructive reference is infeasible: pump_lower: residual 5.2069708 exceeds 1e-05; power_band_lower: residual 170.483424 exceeds 1e-05",
+        "S3": "constructive reference is infeasible: pump_lower: residual 5.24051007 exceeds 1e-05; power_band_lower: residual 681.939541 exceeds 1e-05",
+        "S4": "constructive reference is infeasible: pump_lower: residual 5.25577043 exceeds 1e-05; power_band_lower: residual 2727.72914 exceeds 1e-05",
+        "S5": "constructive reference is infeasible: pump_lower: residual 5.25577043 exceeds 1e-05; power_band_lower: residual 10910.9664 exceeds 1e-05"
+      }
+    },
+    {
+      "candidate_id": 1,
+      "start_month_day": "11-08",
+      "end_month_day": "11-14",
+      "start_hour_of_year": 7464,
+      "minimum_c": 8.2,
+      "maximum_c": 18.9,
+      "mean_c": 13.563988095238095,
+      "reference_feasible_all_scales_seed42": false,
+      "failure_reasons": {
+        "S1": "constructive reference is infeasible: pump_lower: residual 3.09809399 exceeds 1e-05; power_band_lower: residual 31.4767092 exceeds 1e-05",
+        "S2": "constructive reference is infeasible: pump_lower: residual 3.18933392 exceeds 1e-05; power_band_lower: residual 125.906115 exceeds 1e-05",
+        "S3": "constructive reference is infeasible: pump_lower: residual 3.2058621 exceeds 1e-05; power_band_lower: residual 503.63748 exceeds 1e-05",
+        "S4": "constructive reference is infeasible: pump_lower: residual 3.22303118 exceeds 1e-05; power_band_lower: residual 2014.51372 exceeds 1e-05",
+        "S5": "constructive reference is infeasible: pump_lower: residual 3.27844156 exceeds 1e-05; power_band_lower: residual 8058.03928 exceeds 1e-05"
+      }
+    },
+    {
+      "candidate_id": 2,
+      "start_month_day": "11-15",
+      "end_month_day": "11-21",
+      "start_hour_of_year": 7632,
+      "minimum_c": 3.7,
+      "maximum_c": 19.5,
+      "mean_c": 8.63080357142857,
+      "reference_feasible_all_scales_seed42": false,
+      "failure_reasons": {
+        "S1": "constructive reference is infeasible: pump_lower: residual 4.22344387 exceeds 1e-05; power_band_lower: residual 37.5553386 exceeds 1e-05",
+        "S2": "constructive reference is infeasible: pump_lower: residual 4.28986313 exceeds 1e-05; power_band_lower: residual 150.221011 exceeds 1e-05",
+        "S3": "constructive reference is infeasible: pump_lower: residual 4.3007048 exceeds 1e-05; power_band_lower: residual 600.893149 exceeds 1e-05",
+        "S4": "constructive reference is infeasible: pump_lower: residual 4.33179804 exceeds 1e-05; power_band_lower: residual 2403.54031 exceeds 1e-05",
+        "S5": "constructive reference is infeasible: pump_lower: residual 4.34866074 exceeds 1e-05; power_band_lower: residual 9614.18136 exceeds 1e-05"
+      }
+    },
+    {
+      "candidate_id": 3,
+      "start_month_day": "11-22",
+      "end_month_day": "11-28",
+      "start_hour_of_year": 7800,
+      "minimum_c": 0.4,
+      "maximum_c": 19.4,
+      "mean_c": 8.579761904761906,
+      "reference_feasible_all_scales_seed42": false,
+      "failure_reasons": {
+        "S1": "constructive reference is infeasible: pump_lower: residual 4.13819009 exceeds 1e-05; power_band_lower: residual 37.0948363 exceeds 1e-05",
+        "S2": "constructive reference is infeasible: pump_lower: residual 4.2064897 exceeds 1e-05; power_band_lower: residual 148.378974 exceeds 1e-05",
+        "S3": "constructive reference is infeasible: pump_lower: residual 4.21526796 exceeds 1e-05; power_band_lower: residual 593.525296 exceeds 1e-05",
+        "S4": "constructive reference is infeasible: pump_lower: residual 4.24780056 exceeds 1e-05; power_band_lower: residual 2374.0686 exceeds 1e-05",
+        "S5": "constructive reference is infeasible: pump_lower: residual 4.26758353 exceeds 1e-05; power_band_lower: residual 9496.29181 exceeds 1e-05"
+      }
+    },
+    {
+      "candidate_id": 4,
+      "start_month_day": "11-29",
+      "end_month_day": "12-05",
+      "start_hour_of_year": 7968,
+      "minimum_c": -1.4,
+      "maximum_c": 14.8,
+      "mean_c": 7.357886904761905,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 5,
+      "start_month_day": "12-06",
+      "end_month_day": "12-12",
+      "start_hour_of_year": 8136,
+      "minimum_c": -0.04999999999999999,
+      "maximum_c": 8.6,
+      "mean_c": 4.597023809523809,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 6,
+      "start_month_day": "12-13",
+      "end_month_day": "12-19",
+      "start_hour_of_year": 8304,
+      "minimum_c": -2.0,
+      "maximum_c": 8.8,
+      "mean_c": 2.5142857142857147,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 7,
+      "start_month_day": "12-20",
+      "end_month_day": "12-26",
+      "start_hour_of_year": 8472,
+      "minimum_c": -3.9,
+      "maximum_c": 15.9,
+      "mean_c": 4.916517857142857,
+      "reference_feasible_all_scales_seed42": false,
+      "failure_reasons": {
+        "S1": "constructive reference is infeasible: power_band_lower: residual 4.85968045 exceeds 1e-05",
+        "S2": "constructive reference is infeasible: power_band_lower: residual 19.4363438 exceeds 1e-05",
+        "S3": "constructive reference is infeasible: power_band_lower: residual 77.7755316 exceeds 1e-05",
+        "S4": "constructive reference is infeasible: power_band_lower: residual 311.048803 exceeds 1e-05",
+        "S5": "constructive reference is infeasible: power_band_lower: residual 1244.0232 exceeds 1e-05"
+      }
+    },
+    {
+      "candidate_id": 8,
+      "start_month_day": "12-27",
+      "end_month_day": "01-02",
+      "start_hour_of_year": 8640,
+      "minimum_c": -5.3,
+      "maximum_c": 12.6,
+      "mean_c": 4.558333333333333,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 9,
+      "start_month_day": "01-03",
+      "end_month_day": "01-09",
+      "start_hour_of_year": 48,
+      "minimum_c": -5.4,
+      "maximum_c": 4.9,
+      "mean_c": -0.25848214285714294,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 10,
+      "start_month_day": "01-10",
+      "end_month_day": "01-16",
+      "start_hour_of_year": 216,
+      "minimum_c": -4.6,
+      "maximum_c": 14.0,
+      "mean_c": 2.588392857142857,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 11,
+      "start_month_day": "01-17",
+      "end_month_day": "01-23",
+      "start_hour_of_year": 384,
+      "minimum_c": -4.0,
+      "maximum_c": 12.7,
+      "mean_c": 2.8367559523809525,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 12,
+      "start_month_day": "01-24",
+      "end_month_day": "01-30",
+      "start_hour_of_year": 552,
+      "minimum_c": -5.6,
+      "maximum_c": 13.1,
+      "mean_c": 3.0153273809523804,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 13,
+      "start_month_day": "01-31",
+      "end_month_day": "02-06",
+      "start_hour_of_year": 720,
+      "minimum_c": -3.4,
+      "maximum_c": 9.0,
+      "mean_c": 3.8867559523809527,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 14,
+      "start_month_day": "02-07",
+      "end_month_day": "02-13",
+      "start_hour_of_year": 888,
+      "minimum_c": -1.7,
+      "maximum_c": 12.5,
+      "mean_c": 3.9876488095238094,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 15,
+      "start_month_day": "02-14",
+      "end_month_day": "02-20",
+      "start_hour_of_year": 1056,
+      "minimum_c": -0.9,
+      "maximum_c": 13.1,
+      "mean_c": 5.1433035714285715,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 16,
+      "start_month_day": "02-21",
+      "end_month_day": "02-27",
+      "start_hour_of_year": 1224,
+      "minimum_c": -1.2,
+      "maximum_c": 18.1,
+      "mean_c": 4.944047619047619,
+      "reference_feasible_all_scales_seed42": false,
+      "failure_reasons": {
+        "S1": "constructive reference is infeasible: pump_lower: residual 1.92159184 exceeds 1e-05; power_band_lower: residual 25.1217784 exceeds 1e-05",
+        "S2": "constructive reference is infeasible: pump_lower: residual 2.03878065 exceeds 1e-05; power_band_lower: residual 100.485997 exceeds 1e-05",
+        "S3": "constructive reference is infeasible: pump_lower: residual 2.07503441 exceeds 1e-05; power_band_lower: residual 401.961098 exceeds 1e-05",
+        "S4": "constructive reference is infeasible: pump_lower: residual 2.06546944 exceeds 1e-05; power_band_lower: residual 1607.80411 exceeds 1e-05",
+        "S5": "constructive reference is infeasible: pump_lower: residual 2.15957605 exceeds 1e-05; power_band_lower: residual 6431.16347 exceeds 1e-05"
+      }
+    },
+    {
+      "candidate_id": 17,
+      "start_month_day": "02-28",
+      "end_month_day": "03-06",
+      "start_hour_of_year": 1392,
+      "minimum_c": -1.0,
+      "maximum_c": 18.7,
+      "mean_c": 7.610565476190477,
+      "reference_feasible_all_scales_seed42": false,
+      "failure_reasons": {
+        "S1": "constructive reference is infeasible: pump_lower: residual 2.94463719 exceeds 1e-05; power_band_lower: residual 30.6478052 exceeds 1e-05",
+        "S2": "constructive reference is infeasible: pump_lower: residual 3.03926175 exceeds 1e-05; power_band_lower: residual 122.590448 exceeds 1e-05",
+        "S3": "constructive reference is infeasible: pump_lower: residual 3.05836284 exceeds 1e-05; power_band_lower: residual 490.375343 exceeds 1e-05",
+        "S4": "constructive reference is infeasible: pump_lower: residual 3.0718357 exceeds 1e-05; power_band_lower: residual 1961.46464 exceeds 1e-05",
+        "S5": "constructive reference is infeasible: pump_lower: residual 3.13250258 exceeds 1e-05; power_band_lower: residual 7845.83809 exceeds 1e-05"
+      }
+    },
+    {
+      "candidate_id": 18,
+      "start_month_day": "03-07",
+      "end_month_day": "03-13",
+      "start_hour_of_year": 1560,
+      "minimum_c": 0.0,
+      "maximum_c": 11.6,
+      "mean_c": 5.819196428571428,
+      "reference_feasible_all_scales_seed42": true
+    },
+    {
+      "candidate_id": 19,
+      "start_month_day": "03-14",
+      "end_month_day": "03-20",
+      "start_hour_of_year": 1728,
+      "minimum_c": 0.3,
+      "maximum_c": 19.1,
+      "mean_c": 9.515029761904762,
+      "reference_feasible_all_scales_seed42": false,
+      "failure_reasons": {
+        "S1": "constructive reference is infeasible: pump_lower: residual 3.47321062 exceeds 1e-05; power_band_lower: residual 33.502919 exceeds 1e-05",
+        "S2": "constructive reference is infeasible: pump_lower: residual 3.55617699 exceeds 1e-05; power_band_lower: residual 134.011081 exceeds 1e-05",
+        "S3": "constructive reference is infeasible: pump_lower: residual 3.56641586 exceeds 1e-05; power_band_lower: residual 536.056036 exceeds 1e-05",
+        "S4": "constructive reference is infeasible: pump_lower: residual 3.59262014 exceeds 1e-05; power_band_lower: residual 2144.18925 exceeds 1e-05",
+        "S5": "constructive reference is infeasible: pump_lower: residual 3.63518129 exceeds 1e-05; power_band_lower: residual 8576.75331 exceeds 1e-05"
+      }
+    },
+    {
+      "candidate_id": 20,
+      "start_month_day": "03-21",
+      "end_month_day": "03-27",
+      "start_hour_of_year": 1896,
+      "minimum_c": 0.6,
+      "maximum_c": 19.6,
+      "mean_c": 10.659970238095237,
+      "reference_feasible_all_scales_seed42": false,
+      "failure_reasons": {
+        "S1": "constructive reference is infeasible: pump_lower: residual 4.47920521 exceeds 1e-05; power_band_lower: residual 38.9368453 exceeds 1e-05",
+        "S2": "constructive reference is infeasible: pump_lower: residual 4.5399834 exceeds 1e-05; power_band_lower: residual 155.747124 exceeds 1e-05",
+        "S3": "constructive reference is infeasible: pump_lower: residual 4.55701533 exceeds 1e-05; power_band_lower: residual 622.996711 exceeds 1e-05",
+        "S4": "constructive reference is infeasible: pump_lower: residual 4.58379051 exceeds 1e-05; power_band_lower: residual 2491.95545 exceeds 1e-05",
+        "S5": "constructive reference is infeasible: pump_lower: residual 4.59189238 exceeds 1e-05; power_band_lower: residual 9967.85002 exceeds 1e-05"
+      }
+    }
+  ],
+  "screening": {
+    "rule": "21 consecutive non-overlapping 7-day candidates starting Nov 1, ending Mar 27. Keep the first 11 chronologically whose constant-inventory constructive reference passes independent full-trajectory physical validation at all five scales with graph seed 42. No economic optimization or learning model used.",
+    "configuration": "configs/experiment.toml schema 2 default equipment and P4 demand; constructor tested by replacing only weather; full screening seed is 42. Other seeds and altered parameters require their own reference validation.",
+    "feasible_candidates": 12,
+    "calendar_note": "The chronological candidate traversal wraps Dec 31 to Jan 1 within the typical meteorological year; start_hour_of_year uses a non-leap 365-day index.",
+    "split": "First 8 accepted weeks train; next 2 validation; final 1 test. Never reshuffled by scenario seed."
+  }
+}

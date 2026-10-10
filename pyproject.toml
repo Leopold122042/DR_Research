@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=75,<81"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dr-research"
+version = "0.1.0"
+description = "Reproducible heat-pump/storage/building dispatch benchmarks"
+requires-python = ">=3.11,<3.14"
+dependencies = ["numpy==2.2.6", "scipy==1.15.3", "torch==2.7.1"]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2"]
+
+[project.scripts]
+dr-research = "dr_research.experiment:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.setuptools.package-data]
+dr_research = ["data/weather/*"]
