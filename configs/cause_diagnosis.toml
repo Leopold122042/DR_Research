@@ -1,0 +1,10 @@
+schema_version = 1
+# Frozen observations from the completed experiment; no controller retraining.
+scales = ["S2", "S3", "S4"]
+selection_seed = 42
+counts = [64, 256]
+policy_count = 256
+solver_time_limit_s = 120.0
+solver_threads = 1
+# Exact symmetry reduction only; every returned solution is physically checked.
+aggregate_pumps = true
